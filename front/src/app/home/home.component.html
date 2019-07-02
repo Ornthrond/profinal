@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 class="text-center mt-5">Bienvenue sur le site `Donnez moi votre argent`</h1>
+  <h3 class="text-center mt-5">Nos derniers projets ajoutés: </h3>
+  
+
+  <div class="card mt-4 ml-4 mr-4 float-left" *ngFor="let project of projects"  style="width: 18rem;">
+    <img src="{{project.img}}" class="card-img-top" style="width:18rem;height:18rem">
+    <div class="card-body">
+      <h5 class="card-title" >{{project.titre}}</h5>
+      <p class="card-text">Description: <span >{{project.description}}</span></p>
+      <a  class="btn btn-primary">See more</a>
+    </div>
+  </div>
+  <div class="clearfix mt-md-5"></div><hr/>
+  <h3  class="text-center mt-5">Rechercher un projet</h3>
+  <div class="justify-content-center">
+  </div>			
+</div>
